@@ -3,12 +3,20 @@
     src: url(Amazon\ Ember.ttf);
 }
 
+:root {
+    --gray:rgba(242,244,246,.9);
+    --blue:#0f79af;
+}
+
 body {
     margin: 0;
     font-family: ember;
     font-size: 0;
     background-color:black;
+    /* box-sizing: border-box; */
 }
+
+/* common classes */
 
 .h1-tag {
     font-size: 44px;
@@ -25,6 +33,14 @@ body {
     display: flex;
     padding: 16px 50px;
     background-color: #1a242e;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    /* width: -webkit-fill-available; */
+    /* width: 100%; */
+    /* overflow: hidden; */
 }
 
 .header div {
@@ -38,6 +54,15 @@ body {
     margin: 8px;
     height: auto;
 }
+
+.header button{
+    background-color: var(--blue);
+    color: var(--gray);
+    border-radius: 3px;
+    padding: 8px 10px;
+    font-size: 17px;
+    border: none;
+}
 .header div:nth-of-type(2){
     justify-content:end;
 }
@@ -48,7 +73,7 @@ body {
     align-items: center;
 }
 .header li {
-    color: rgba(242,244,246,.9);
+    color: var(--gray);
     font-size: 15px;
     padding-left: 15px;
 }
