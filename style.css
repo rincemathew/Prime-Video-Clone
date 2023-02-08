@@ -14,14 +14,12 @@ body {
     font-family: ember;
     font-size: 0;
     background-color:black;
-    /* box-sizing: border-box; */
 }
 
 /* common classes */
 
 .h1-tag {
     font-size: 44px;
-    /* line-height: 50px; */
     font-weight:lighter;
 }
 
@@ -41,6 +39,9 @@ body {
 .button-tag:hover {
     background-color: var(--blue-hover);
 }
+.hover {
+    cursor: pointer;
+}
 
 
 /* header */
@@ -54,9 +55,6 @@ body {
     left: 0;
     right: 0;
     z-index: 1;
-    /* width: -webkit-fill-available; */
-    /* width: 100%; */
-    /* overflow: hidden; */
 }
 
 .header div {
@@ -104,7 +102,6 @@ body {
 .arrow {
     height: 5px!important;
     width: auto!important;
-    /* margin: 0!important; */
 }
 
 /* body */
@@ -117,7 +114,6 @@ body {
 .first img, .second img, .div-for-cal {
     width: 100%;
     height: 75vh;
-    /* object-fit: cover; */
 }
 
 .first div, .fifth div {
@@ -155,7 +151,6 @@ body {
 
 .third div:nth-of-type(2) {
     display:grid;
-    /* width: 100; */
     gap: 5px;
     grid-template-columns: auto auto auto;
 }
@@ -168,19 +163,31 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    /* overflow: hidden; */
 }
 
 .fifth img {
     position: absolute;
     right: 0;
     top: 0;
-    /* overflow: hidden; */
 }
 
 .footer {
-    height: 200px;
-    background-color: aqua;
-    /* z-index: 1; */
+    background-color: #222222;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    padding: 24px 24px 40px 24px;
+}
+.footer div{
+    display: flex;
+    justify-content: center;
+}
+.footer p {
+    margin: 0;
+    color: #0f79af;
+    padding: 0 5px;
 }
 
+.terms {
+    color: #949494!important;
+}
